@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>13</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Plate.General.AutoProperties.Attributes</AssemblyName>
+    <RootNamespace>Plate.General.AutoProperties.Attributes</RootNamespace>
+    <PackageId>GiantCroissant.Plate.General.AutoProperties.Attributes</PackageId>
+    <Description>Attributes for Plate.SCG.General.AutoProperties source generator.</Description>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+  </PropertyGroup>
+
+</Project>

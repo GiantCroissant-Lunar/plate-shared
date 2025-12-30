@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IgLns12SAQ0=",
+  "success": true,
+  "projectFilePath": "D:\\lunar-snake\\personal-work\\plate-projects\\plate-shared\\dotnet\\src\\Plate.Resilience.Polly\\Plate.Resilience.Polly.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\polly\\7.2.4\\polly.7.2.4.nupkg.sha512"
+  ],
+  "logs": []
+}

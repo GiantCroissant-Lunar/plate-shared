@@ -1,0 +1,25 @@
+{
+  "$schema": "./build.config.schema.json",
+  "solution": "dotnet/source-generators/SourceGenerators.sln",
+  "versionEnv": "Version",
+  "artifactsVersion": "plate-shared",
+
+  "projectGroups": {
+    "packages": {
+      "sourceDir": "dotnet/source-generators",
+      "action": "pack",
+      "include": [
+        "DI.ConstructorInjection",
+        "DI.ConstructorInjection.Attributes",
+        "General.AutoProperties",
+        "General.AutoProperties.Attributes",
+        "General.AutoToString",
+        "General.AutoToString.Attributes",
+        "General.DisposePattern",
+        "General.DisposePattern.Attributes",
+        "General.NamespaceUsingScope"
+      ],
+      "exclude": []
+    }
+  }
+}

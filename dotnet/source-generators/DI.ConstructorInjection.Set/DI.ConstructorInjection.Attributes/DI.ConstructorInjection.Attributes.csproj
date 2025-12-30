@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>13</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Plate.SCG.DI.ConstructorInjection.Attributes</AssemblyName>
+    <RootNamespace>Plate.SCG.DI.ConstructorInjection.Attributes</RootNamespace>
+    <PackageId>GiantCroissant.Plate.SCG.DI.ConstructorInjection.Attributes</PackageId>
+    <Description>Attributes for Plate.SCG.DI.ConstructorInjection source generator.</Description>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+  </PropertyGroup>
+
+</Project>

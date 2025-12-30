@@ -1,0 +1,10 @@
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\bin\Release\netstandard2.0\Plate.SCG.Resilience.Decorator.deps.json
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\bin\Release\netstandard2.0\Plate.SCG.Resilience.Decorator.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\bin\Release\netstandard2.0\Plate.SCG.Resilience.Decorator.pdb
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\obj\Release\netstandard2.0\Resilience.Decorator.csproj.AssemblyReference.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\obj\Release\netstandard2.0\Resilience.Decorator.GeneratedMSBuildEditorConfig.editorconfig
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\obj\Release\netstandard2.0\Resilience.Decorator.AssemblyInfoInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\obj\Release\netstandard2.0\Resilience.Decorator.AssemblyInfo.cs
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\obj\Release\netstandard2.0\Resilience.Decorator.csproj.CoreCompileInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\obj\Release\netstandard2.0\Plate.SCG.Resilience.Decorator.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\Resilience.Decorator.Set\Resilience.Decorator\obj\Release\netstandard2.0\Plate.SCG.Resilience.Decorator.pdb

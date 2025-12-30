@@ -1,0 +1,10 @@
+<Project>
+  <ItemGroup>
+    <!-- Use in-repo DI ConstructorInjection analyzer for consumers -->
+    <ProjectReference Include="DI.ConstructorInjection.Set\DI.ConstructorInjection\DI.ConstructorInjection.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
+    <!-- Attributes for [ConstructorInjection] and [ResolveInConstructor] -->
+    <ProjectReference Include="DI.ConstructorInjection.Set\DI.ConstructorInjection.Attributes\DI.ConstructorInjection.Attributes.csproj" />
+  </ItemGroup>
+</Project>

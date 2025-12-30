@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = Plate.SCG.General.DisposePattern.Attributes
+build_property.ProjectDir = D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.DisposePattern.Set\General.DisposePattern.Attributes\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

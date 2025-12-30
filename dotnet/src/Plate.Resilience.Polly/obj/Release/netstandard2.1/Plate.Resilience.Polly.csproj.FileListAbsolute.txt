@@ -1,0 +1,13 @@
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\obj\Release\netstandard2.1\Plate.Resilience.Polly.csproj.AssemblyReference.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\obj\Release\netstandard2.1\Plate.Resilience.Polly.GeneratedMSBuildEditorConfig.editorconfig
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\obj\Release\netstandard2.1\Plate.Resilience.Polly.AssemblyInfoInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\obj\Release\netstandard2.1\Plate.Resilience.Polly.AssemblyInfo.cs
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\obj\Release\netstandard2.1\Plate.Resilience.Polly.csproj.CoreCompileInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\bin\Release\netstandard2.1\Plate.Resilience.Polly.deps.json
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\bin\Release\netstandard2.1\Plate.Resilience.Polly.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\bin\Release\netstandard2.1\Plate.Resilience.Polly.pdb
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\bin\Release\netstandard2.1\Plate.Resilience.Abstractions.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\bin\Release\netstandard2.1\Plate.Resilience.Abstractions.pdb
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\obj\Release\netstandard2.1\Plate.Re.55573280.Up2Date
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\obj\Release\netstandard2.1\Plate.Resilience.Polly.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Polly\obj\Release\netstandard2.1\Plate.Resilience.Polly.pdb

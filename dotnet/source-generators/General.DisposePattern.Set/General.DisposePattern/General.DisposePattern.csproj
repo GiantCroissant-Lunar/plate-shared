@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\Set.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <langVersion>13</langVersion>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Plate.SCG.General.DisposePattern</AssemblyName>
+        <RootNamespace>Plate.SCG.General.DisposePattern</RootNamespace>
+        <PackageId>GiantCroissant.Plate.SCG.General.DisposePattern</PackageId>
+        <Description>Source generator implementing the Dispose pattern for Plate projects.</Description>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <IsRoslynComponent>true</IsRoslynComponent>
+        <PackageType>Analyzer</PackageType>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+    </PropertyGroup>
+
+    <!-- AssemblyVersion and PackageVersion supplied by GitVersion during build -->
+
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.CodeAnalysis" Version="4.10.0" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" PrivateAssets="all" />
+    </ItemGroup>
+
+    <!-- Package the build output into the "analyzer" slot in the NuGet package -->
+    <ItemGroup>
+        <None Include="Docs\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup Condition="Exists('$(OutputPath)\Plate.Shared.Foundation.dll')">
+        <!-- <None
+            Include="$(OutputPath)\Plate.Shared.Foundation.dll"
+            Pack="true"
+            PackagePath="analyzers/dotnet/cs"
+            Visible="false"
+        /> -->
+    </ItemGroup>
+
+    <!-- Use ProjectReference for local dev -->
+    <ItemGroup Condition="'$(UseLocalProjectReferences)' == 'true'">
+        <ProjectReference
+            Include="..\..\..\shared-lib\Shared.Set\Shared.Abstractions\Shared.Abstractions.csproj"
+        />
+        <ProjectReference
+            Include="..\..\..\shared-lib\Shared.Set\SCG.Shared.Abstractions\SCG.Shared.Abstractions.csproj"
+        />
+    </ItemGroup>
+
+    <!-- PackageReference for missing Plate packages is removed - they are not yet published -->
+    <!-- The source generators work without them for local development -->
+
+    <!-- Provide explicit empty lib group to silence NU5128 -->
+    <ItemGroup>
+        <None Include="_._" Pack="true" PackagePath="lib/netstandard2.0" Visible="false" />
+    </ItemGroup>
+
+    <!-- Removed GenerateNuspecDependsOn - now using GitVersion from build system -->
+
+    <Target Name="PrintUseLocalRef" BeforeTargets="Build">
+        <Message Text="UseLocalProjectReferences = '$(UseLocalProjectReferences)'" Importance="high" />
+    </Target>
+
+    <!-- Removed SetPackageVersion target - now using GitVersion from build system -->
+
+    <Target Name="IncludeAnalyzerDllInPackage" AfterTargets="Build">
+        <ItemGroup>
+            <None
+                Include="$(OutputPath)\$(AssemblyName).dll"
+                Pack="true"
+                PackagePath="analyzers/dotnet/cs"
+                Visible="false"
+            />
+        </ItemGroup>
+    </Target>
+
+    <!-- Removed CopyNuGetPackageToRepo target; build system manages artifacts -->
+</Project>

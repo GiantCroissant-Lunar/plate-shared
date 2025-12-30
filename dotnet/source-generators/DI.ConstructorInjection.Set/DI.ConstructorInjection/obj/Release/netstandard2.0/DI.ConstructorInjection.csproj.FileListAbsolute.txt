@@ -1,0 +1,10 @@
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\bin\Release\netstandard2.0\Plate.SCG.DI.ConstructorInjection.deps.json
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\bin\Release\netstandard2.0\Plate.SCG.DI.ConstructorInjection.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\bin\Release\netstandard2.0\Plate.SCG.DI.ConstructorInjection.pdb
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\obj\Release\netstandard2.0\DI.ConstructorInjection.csproj.AssemblyReference.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\obj\Release\netstandard2.0\DI.ConstructorInjection.GeneratedMSBuildEditorConfig.editorconfig
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\obj\Release\netstandard2.0\DI.ConstructorInjection.AssemblyInfoInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\obj\Release\netstandard2.0\DI.ConstructorInjection.AssemblyInfo.cs
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\obj\Release\netstandard2.0\DI.ConstructorInjection.csproj.CoreCompileInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\obj\Release\netstandard2.0\Plate.SCG.DI.ConstructorInjection.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\DI.ConstructorInjection.Set\DI.ConstructorInjection\obj\Release\netstandard2.0\Plate.SCG.DI.ConstructorInjection.pdb

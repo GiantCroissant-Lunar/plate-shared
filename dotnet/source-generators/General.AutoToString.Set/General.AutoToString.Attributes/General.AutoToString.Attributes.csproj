@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>13</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Plate.SCG.General.AutoToString.Attributes</AssemblyName>
+    <RootNamespace>Plate.SCG.General.AutoToString.Attributes</RootNamespace>
+    <PackageId>GiantCroissant.Plate.SCG.General.AutoToString.Attributes</PackageId>
+    <Description>Attributes for Plate.SCG.General.AutoToString source generator.</Description>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Project>
+  <ItemGroup>
+    <!-- Attributes assembly for AutoProperties -->
+    <PackageReference Include="Plate.General.AutoProperties.Attributes" Version="0.1.0" />
+
+    <!-- AutoProperties source generator as analyzer -->
+    <PackageReference Include="Plate.General.AutoProperties" Version="0.1.0"
+                      PrivateAssets="all"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>

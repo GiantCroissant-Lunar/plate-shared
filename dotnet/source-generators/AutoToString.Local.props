@@ -1,0 +1,10 @@
+<Project>
+  <ItemGroup>
+    <!-- Use in-repo AutoToString analyzer project for consumers -->
+    <ProjectReference Include="General.AutoToString.Set\General.AutoToString\General.AutoToString.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
+    <!-- Attributes available to consumer code -->
+    <ProjectReference Include="General.AutoToString.Set\General.AutoToString.Attributes\General.AutoToString.Attributes.csproj" />
+  </ItemGroup>
+</Project>

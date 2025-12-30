@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Plate.SCG.General.DisposePattern</id>
+    <version>0.1.0-202507121156</version>
+    <authors>ApprenticeGC</authors>
+    <developmentDependency>true</developmentDependency>
+    <readme>README.md</readme>
+    <description>Package Description</description>
+    <copyright>2024</copyright>
+    <packageTypes>
+      <packageType name="Analyzer" />
+    </packageTypes>
+    <repository type="git" commit="74cc5e299716fe41e749c879ffe039be47621ed6" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Plate.SCG.Shared.Abstractions" version="0.1.0-202507121156" exclude="Runtime,Compile,Build" />
+        <dependency id="Plate.SCG.Shared.Attributes" version="0.1.0-202507121156" exclude="Build,Analyzers" />
+        <dependency id="Plate.Shared.Abstractions" version="0.1.0-202507121156" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

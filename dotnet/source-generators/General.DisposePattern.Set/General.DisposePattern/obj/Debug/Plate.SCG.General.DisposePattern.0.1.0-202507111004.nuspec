@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Plate.SCG.General.DisposePattern</id>
+    <version>0.1.0-202507111004</version>
+    <authors>ApprenticeGC</authors>
+    <developmentDependency>true</developmentDependency>
+    <readme>README.md</readme>
+    <description>Package Description</description>
+    <copyright>2024</copyright>
+    <packageTypes>
+      <packageType name="Analyzer" />
+    </packageTypes>
+    <repository type="git" commit="74cc5e299716fe41e749c879ffe039be47621ed6" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Plate.SCG.Shared.Abstractions" version="0.1.0-202507111004" exclude="Build,Analyzers" />
+        <dependency id="Plate.SCG.Shared.Attributes" version="0.1.0-202507111004" exclude="Build,Analyzers" />
+        <dependency id="Plate.Shared.Abstractions" version="0.1.0-202507111004" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\lunar-snake\personal-work\plate-projects\eco-shared\packages\scoped-2051\com.giantcroissant.plate.shared\dotnet~\source-code-generator\General.DisposePattern.Set\General.DisposePattern\Docs\README.md" target="\README.md" />
+    <file src="C:\lunar-snake\personal-work\plate-projects\eco-shared\packages\scoped-2051\com.giantcroissant.plate.shared\dotnet~\source-code-generator\General.DisposePattern.Set\General.DisposePattern\bin\Debug\netstandard2.1\Plate.SCG.General.DisposePattern.dll" target="analyzers\dotnet\cs\Plate.SCG.General.DisposePattern.dll" />
+  </files>
+</package>

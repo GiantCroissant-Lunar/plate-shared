@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GiantCroissant.Plate.SCG.General.DisposePattern</id>
+    <version>1.0.0</version>
+    <authors>GiantCroissant</authors>
+    <developmentDependency>true</developmentDependency>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <description>Source generator implementing the Dispose pattern for Plate layer projects.</description>
+    <copyright>Copyright © GiantCroissant 2024</copyright>
+    <packageTypes>
+      <packageType name="Analyzer" />
+    </packageTypes>
+    <repository type="git" commit="e587f38fbdd8a5857420c6f8825e31fc1d9e8274" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="GiantCroissant.Plate.SCG.Shared.Abstractions" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="GiantCroissant.Plate.Shared.Abstractions" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="GiantCroissant.Plate.SCG.Shared.Attributes" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\lunar-snake\personal-work\plate-projects\eco-shared\packages\scoped-2051\com.giantcroissant.plate.shared\dotnet~\source-code-generator\General.DisposePattern.Set\General.DisposePattern\Docs\README.md" target="\README.md" />
+    <file src="C:\lunar-snake\personal-work\plate-projects\eco-shared\packages\scoped-2051\com.giantcroissant.plate.shared\dotnet~\source-code-generator\General.DisposePattern.Set\General.DisposePattern\bin\Release\netstandard2.0\Plate.SCG.General.DisposePattern.dll" target="analyzers\dotnet\cs\Plate.SCG.General.DisposePattern.dll" />
+  </files>
+</package>

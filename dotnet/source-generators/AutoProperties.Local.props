@@ -1,0 +1,10 @@
+<Project>
+  <ItemGroup>
+    <!-- Use in-repo AutoProperties analyzer project for consumers -->
+    <ProjectReference Include="$(MSBuildThisFileDirectory)General.AutoProperties.Set\General.AutoProperties\General.AutoProperties.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
+    <!-- Attributes available to consumer code -->
+    <ProjectReference Include="$(MSBuildThisFileDirectory)General.AutoProperties.Set\General.AutoProperties.Attributes\General.AutoProperties.Attributes.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Yokan.SCG.General.DisposePattern</id>
+    <version>0.1.0.2025-05-27-1629</version>
+    <authors>ApprenticeGC</authors>
+    <developmentDependency>true</developmentDependency>
+    <readme>README.md</readme>
+    <description>Package Description</description>
+    <copyright>2024</copyright>
+    <packageTypes>
+      <packageType name="Analyzer" />
+    </packageTypes>
+    <repository type="git" commit="8f89fceb7bbfc9a31b162ef078649a0cb95f428e" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\lunar-snake\yokan-projects\adzuki-bean\packages\scoped-2151\com.giantcroissant.yokan.cross\dotnet~\source-code-generator\General.DisposePattern.Set\General.DisposePattern\Docs\README.md" target="\README.md" />
+    <file src="C:\lunar-snake\yokan-projects\adzuki-bean\packages\scoped-2151\com.giantcroissant.yokan.cross\dotnet~\source-code-generator\General.DisposePattern.Set\General.DisposePattern\bin\Debug\netstandard2.0\Yokan.SCG.General.DisposePattern.dll" target="analyzers\dotnet\cs\Yokan.SCG.General.DisposePattern.dll" />
+    <file src="C:\lunar-snake\yokan-projects\adzuki-bean\packages\scoped-2151\com.giantcroissant.yokan.cross\dotnet~\source-code-generator\General.DisposePattern.Set\General.DisposePattern\bin\Debug\netstandard2.0\Yokan.SCG.General.DisposePattern.Attributes.dll" target="analyzers\dotnet\cs\Yokan.SCG.General.DisposePattern.Attributes.dll" />
+    <file src="C:\lunar-snake\yokan-projects\adzuki-bean\packages\scoped-2151\com.giantcroissant.yokan.cross\dotnet~\source-code-generator\General.DisposePattern.Set\General.DisposePattern\bin\Debug\netstandard2.0\Yokan.SCG.General.DisposePattern.Attributes.dll" target="lib\netstandard2.0\Yokan.SCG.General.DisposePattern.Attributes.dll" />
+  </files>
+</package>

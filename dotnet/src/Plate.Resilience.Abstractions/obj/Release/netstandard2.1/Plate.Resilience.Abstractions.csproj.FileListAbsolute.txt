@@ -1,0 +1,9 @@
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\bin\Release\netstandard2.1\Plate.Resilience.Abstractions.deps.json
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\bin\Release\netstandard2.1\Plate.Resilience.Abstractions.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\bin\Release\netstandard2.1\Plate.Resilience.Abstractions.pdb
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\obj\Release\netstandard2.1\Plate.Resilience.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\obj\Release\netstandard2.1\Plate.Resilience.Abstractions.AssemblyInfoInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\obj\Release\netstandard2.1\Plate.Resilience.Abstractions.AssemblyInfo.cs
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\obj\Release\netstandard2.1\Plate.Resilience.Abstractions.csproj.CoreCompileInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\obj\Release\netstandard2.1\Plate.Resilience.Abstractions.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\obj\Release\netstandard2.1\Plate.Resilience.Abstractions.pdb

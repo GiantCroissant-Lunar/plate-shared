@@ -1,0 +1,10 @@
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\bin\Release\netstandard2.0\Plate.SCG.General.AutoProperties.deps.json
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\bin\Release\netstandard2.0\Plate.SCG.General.AutoProperties.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\bin\Release\netstandard2.0\Plate.SCG.General.AutoProperties.pdb
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\obj\Release\netstandard2.0\General.AutoProperties.csproj.AssemblyReference.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\obj\Release\netstandard2.0\General.AutoProperties.GeneratedMSBuildEditorConfig.editorconfig
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\obj\Release\netstandard2.0\General.AutoProperties.AssemblyInfoInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\obj\Release\netstandard2.0\General.AutoProperties.AssemblyInfo.cs
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\obj\Release\netstandard2.0\General.AutoProperties.csproj.CoreCompileInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\obj\Release\netstandard2.0\Plate.SCG.General.AutoProperties.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoProperties.Set\General.AutoProperties\obj\Release\netstandard2.0\Plate.SCG.General.AutoProperties.pdb

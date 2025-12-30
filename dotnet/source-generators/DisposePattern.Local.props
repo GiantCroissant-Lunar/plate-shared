@@ -1,0 +1,10 @@
+<Project>
+  <ItemGroup>
+    <!-- Use in-repo analyzer project as an analyzer for consumers -->
+    <ProjectReference Include="$(MSBuildThisFileDirectory)General.DisposePattern.Set\General.DisposePattern\General.DisposePattern.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
+    <!-- Attributes available to consumer code -->
+    <ProjectReference Include="$(MSBuildThisFileDirectory)General.DisposePattern.Set\General.DisposePattern.Attributes\General.DisposePattern.Attributes.csproj" />
+  </ItemGroup>
+</Project>

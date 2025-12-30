@@ -1,0 +1,10 @@
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\bin\Release\netstandard2.0\Plate.SCG.General.AutoToString.deps.json
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\bin\Release\netstandard2.0\Plate.SCG.General.AutoToString.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\bin\Release\netstandard2.0\Plate.SCG.General.AutoToString.pdb
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\obj\Release\netstandard2.0\General.AutoToString.csproj.AssemblyReference.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\obj\Release\netstandard2.0\General.AutoToString.GeneratedMSBuildEditorConfig.editorconfig
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\obj\Release\netstandard2.0\General.AutoToString.AssemblyInfoInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\obj\Release\netstandard2.0\General.AutoToString.AssemblyInfo.cs
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\obj\Release\netstandard2.0\General.AutoToString.csproj.CoreCompileInputs.cache
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\obj\Release\netstandard2.0\Plate.SCG.General.AutoToString.dll
+D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\source-generators\General.AutoToString.Set\General.AutoToString\obj\Release\netstandard2.0\Plate.SCG.General.AutoToString.pdb
