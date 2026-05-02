@@ -45,8 +45,10 @@ public sealed class SourceGenerator : IIncrementalGenerator
         var executingAssemblyName = Assembly.GetExecutingAssembly().GetName();
         foreach (var typeSymbol in typeSymbols)
         {
-            var ns = typeSymbol.ContainingNamespace.ToDisplayString();
-            var fileName = $"{ns}.{typeSymbol.Name}.DI.ConstructorInjection.g.cs";
+            var namespaceName = GetNamespaceName(typeSymbol);
+            var fileName = string.IsNullOrWhiteSpace(namespaceName)
+                ? $"{typeSymbol.Name}.DI.ConstructorInjection.g.cs"
+                : $"{namespaceName}.{typeSymbol.Name}.DI.ConstructorInjection.g.cs";
             context.AddSource(fileName, GenerateCode(executingAssemblyName, fileName, typeSymbol));
         }
     }
@@ -58,7 +60,7 @@ public sealed class SourceGenerator : IIncrementalGenerator
     {
         var assemblyName = $"{executingAssemblyName.Name}.{nameof(SourceGenerator)}";
         var assemblyVersion = $"{executingAssemblyName.Version}";
-        var namespaceName = typeSymbol.ContainingNamespace.ToDisplayString();
+        var namespaceName = GetNamespaceName(typeSymbol);
         var typeDeclarationLine = Utility.CreateTypeDeclarationLine(typeSymbol);
         var typeName = typeSymbol.Name;
         var codeGenAttributes = Utility.CreateCodeGenAttributes(assemblyName, assemblyVersion);
@@ -73,8 +75,11 @@ public sealed class SourceGenerator : IIncrementalGenerator
         builder.AppendLine();
         builder.AppendLine("#nullable enable");
         builder.AppendLine();
-        builder.AppendLine($"namespace {namespaceName};");
-        builder.AppendLine();
+        if (!string.IsNullOrWhiteSpace(namespaceName))
+        {
+            builder.AppendLine($"namespace {namespaceName};");
+            builder.AppendLine();
+        }
         builder.AppendLine(typeDeclarationLine);
         builder.AppendLine("{");
         builder.Append(indentedAttributes);
@@ -102,6 +107,13 @@ public sealed class SourceGenerator : IIncrementalGenerator
         builder.AppendLine("}");
 
         return builder.ToString();
+    }
+
+    private static string GetNamespaceName(ITypeSymbol typeSymbol)
+    {
+        return typeSymbol.ContainingNamespace.IsGlobalNamespace
+            ? string.Empty
+            : typeSymbol.ContainingNamespace.ToDisplayString();
     }
 
     private static List<ISymbol> GetResolveInConstructorSymbols(ITypeSymbol typeSymbol)
@@ -145,7 +157,7 @@ public sealed class SourceGenerator : IIncrementalGenerator
     {
         var indentString = new string(' ', indent);
         var paramStrings = symbols
-            .Select(symbol => (IFieldSymbol) symbol)
+            .Select(symbol => (IFieldSymbol)symbol)
             .Select(fieldSymbol =>
             {
                 var strippedUnderscore = fieldSymbol.Name.TrimStart('_');
@@ -181,7 +193,7 @@ public sealed class SourceGenerator : IIncrementalGenerator
         var adjustedAssignmentStrings = string
             .Join(newLine, assignmentStrings)
             .TrimStart(indentString.ToCharArray())
-            .TrimEnd(newLine.ToCharArray().Concat(new[] {',', ' '}).ToArray());
+            .TrimEnd(newLine.ToCharArray().Concat(new[] { ',', ' ' }).ToArray());
 
         if (string.IsNullOrWhiteSpace(adjustedAssignmentStrings))
         {

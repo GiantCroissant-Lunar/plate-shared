@@ -285,7 +285,7 @@ dotnet_diagnostic.NSUSG004.severity = warning
 
 ## Agent Checklist: Adding a New Generator Set
 
-When integrating another eco-shared or Yokan source generator into this repo:
+When integrating another shared source generator into this repo:
 
 1. **Create a Set folder** under `dotnet/source-generators`
    Example: `General.AutoProperties.Set`, `DI.ConstructorInjection.Set`.

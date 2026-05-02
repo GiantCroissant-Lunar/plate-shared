@@ -19,9 +19,6 @@ public class UnitTest : VerifyBase
 """
 using System;
 using System.Collections.Generic;
-
-namespace Yokan.Game.Fake;
-
 using Plate.SCG.DI.ConstructorInjection.Attributes;
 
 [ConstructorInjection]
@@ -50,9 +47,6 @@ public partial class SomeType01
         const string code =
 """
 using System;
-
-namespace Yokan.Game.Fake;
-
 using Plate.SCG.DI.ConstructorInjection.Attributes;
 
 // Minimal AutoProperties-like attribute for testing
