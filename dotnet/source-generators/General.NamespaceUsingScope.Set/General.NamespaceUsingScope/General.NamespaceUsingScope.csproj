@@ -7,6 +7,10 @@
     <AssemblyName>Plate.SCG.General.NamespaceUsingScope</AssemblyName>
     <RootNamespace>Plate.SCG.General.NamespaceUsingScope</RootNamespace>
     <PackageId>GiantCroissant.Plate.SCG.General.NamespaceUsingScope</PackageId>
+    <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
+    <Authors>Lunar Horse</Authors>
+    <Description>Source generator for namespace using scope management</Description>
+    <PackageTags>source-generator;roslyn;namespace;using-scope</PackageTags>
     <IsRoslynAnalyzer>true</IsRoslynAnalyzer>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
     <DevelopmentDependency>true</DevelopmentDependency>
@@ -16,8 +20,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.10.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.3.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0" PrivateAssets="all" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <Import Project="..\Set.props" />
 
@@ -9,7 +9,10 @@
         <AssemblyName>Plate.SCG.General.DisposePattern</AssemblyName>
         <RootNamespace>Plate.SCG.General.DisposePattern</RootNamespace>
         <PackageId>GiantCroissant.Plate.SCG.General.DisposePattern</PackageId>
+        <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
+        <Authors>Lunar Horse</Authors>
         <Description>Source generator implementing the Dispose pattern for Plate projects.</Description>
+        <PackageTags>source-generator;roslyn;dispose-pattern;dispose;idisposable</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -28,8 +31,8 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
-        <PackageReference Include="Microsoft.CodeAnalysis" Version="4.10.0" PrivateAssets="all" />
-        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.CodeAnalysis" Version="4.3.0" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0" PrivateAssets="all" />
     </ItemGroup>
 
     <!-- Package the build output into the "analyzer" slot in the NuGet package -->

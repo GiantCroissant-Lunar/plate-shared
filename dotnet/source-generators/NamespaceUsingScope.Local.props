@@ -1,11 +1,11 @@
 <Project>
   <ItemGroup>
     <!-- Use in-repo NamespaceUsingScope analyzer project for consumers -->
-    <ProjectReference Include="General.NamespaceUsingScope.Set\General.NamespaceUsingScope\General.NamespaceUsingScope.csproj"
+    <ProjectReference Include="$(MSBuildThisFileDirectory)General.NamespaceUsingScope.Set\General.NamespaceUsingScope\General.NamespaceUsingScope.csproj"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />
 
-    <!-- Config file that controls which namespaces are treated as \"inside\" -->
-    <AdditionalFiles Include="NamespaceUsingScope.config.json" />
+    <!-- Config file that controls which namespaces are treated as "inside" -->
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)NamespaceUsingScope.config.json" />
   </ItemGroup>
 </Project>
