@@ -1,0 +1,26 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+**/TestResults/
+build/_artifacts/
+.nuke/temp/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# IDE / local tooling
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Resilience is owned by crosscut-foundation.
+dotnet/source-generators/Resilience.Decorator.Set/
+dotnet/src/Plate.Resilience.Abstractions/
+dotnet/src/Plate.Resilience.Polly/

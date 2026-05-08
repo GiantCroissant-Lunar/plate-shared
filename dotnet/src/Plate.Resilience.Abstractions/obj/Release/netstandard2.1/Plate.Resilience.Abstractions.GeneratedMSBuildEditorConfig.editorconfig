@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = Plate.Resilience.Abstractions
-build_property.ProjectDir = D:\lunar-snake\personal-work\plate-projects\plate-shared\dotnet\src\Plate.Resilience.Abstractions\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 
