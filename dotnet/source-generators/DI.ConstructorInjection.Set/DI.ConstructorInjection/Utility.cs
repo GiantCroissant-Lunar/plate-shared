@@ -77,12 +77,15 @@ internal static class Utility
             _ => "internal",
         };
 
-        var keyword = typeSymbol.TypeKind switch
+        var isRecord = typeSymbol.IsRecord;
+        var keyword = (typeSymbol.TypeKind, isRecord) switch
         {
-            TypeKind.Class => "class",
-            TypeKind.Struct => "struct",
-            TypeKind.Interface => "interface",
-            TypeKind.Enum => "enum",
+            (TypeKind.Class, true) => "record",
+            (TypeKind.Class, false) => "class",
+            (TypeKind.Struct, true) => "record struct",
+            (TypeKind.Struct, false) => "struct",
+            (TypeKind.Interface, _) => "interface",
+            (TypeKind.Enum, _) => "enum",
             _ => "class",
         };
 
@@ -94,6 +97,11 @@ internal static class Utility
             var typeArgs = string.Join(", ", named.TypeArguments
                 .Select(t => t.ToDisplayString(SymbolDisplayFormat.MinimallyQualifiedFormat)));
             name = $"{name}<{typeArgs}>";
+        }
+
+        if ((typeSymbol as INamedTypeSymbol)?.IsReadOnly == true)
+        {
+            return $"{accessibility} readonly {modifiers} {keyword} {name}";
         }
 
         return $"{accessibility} {modifiers} {keyword} {name}";
@@ -115,8 +123,8 @@ internal static class Utility
         }
 
         var indent = new string(' ', spaces);
-        var lines = text.Split(new[] {"\r\n", "\n"}, StringSplitOptions.None);
-        return string.Join(Environment.NewLine, lines.Select(l => indent + l));
+        var lines = text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
+        return string.Join("\n", lines.Select(l => indent + l));
     }
 
     public static List<ISymbol> GetAttributedSymbols(

@@ -13,7 +13,7 @@ public partial class TestClass
         [global::System.Diagnostics.DebuggerNonUserCode] 
         public string Name
     {
-        get => _name;
+        get => _name!;
         init => _name = value;
     }
 }

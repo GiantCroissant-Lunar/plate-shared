@@ -13,17 +13,17 @@ public partial class TestClass
         [global::System.Diagnostics.DebuggerNonUserCode] 
         public string PublicField
     {
-        get => _publicField;
+        get => _publicField!;
         set => _publicField = value;
     }
     internal string InternalField
     {
-        get => _internalField;
+        get => _internalField!;
         set => _internalField = value;
     }
     protected string ProtectedField
     {
-        get => _protectedField;
+        get => _protectedField!;
         set => _protectedField = value;
     }
 }

@@ -13,7 +13,7 @@ public partial class TestClass
         [global::System.Diagnostics.DebuggerNonUserCode] 
         public string Name
     {
-        get => m_name;
+        get => m_name!;
         set => m_name = value;
     }
     public int Age

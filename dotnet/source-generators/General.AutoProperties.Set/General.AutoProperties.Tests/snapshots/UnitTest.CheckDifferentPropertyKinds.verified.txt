@@ -13,21 +13,21 @@ public partial class TestClass
         [global::System.Diagnostics.DebuggerNonUserCode] 
         public string ReadWrite
     {
-        get => _readWrite;
+        get => _readWrite!;
         set => _readWrite = value;
     }
     public string ReadOnly
     {
-        get => _readOnly;
+        get => _readOnly!;
     }
     public string PrivateSetter
     {
-        get => _privateSetter;
+        get => _privateSetter!;
         private set => _privateSetter = value;
     }
     public string InitOnly
     {
-        get => _initOnly;
+        get => _initOnly!;
         init => _initOnly = value;
     }
 }

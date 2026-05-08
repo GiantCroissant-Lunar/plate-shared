@@ -78,19 +78,23 @@ internal static class Utility
             _ => "internal",
         };
 
-        var keyword = typeSymbol.TypeKind switch
+        var isRecord = typeSymbol.IsRecord;
+        var keyword = (typeSymbol.TypeKind, isRecord) switch
         {
-            TypeKind.Class => "class",
-            TypeKind.Struct => "struct",
-            TypeKind.Interface => "interface",
-            TypeKind.Enum => "enum",
+            (TypeKind.Class, true) => "record",
+            (TypeKind.Class, false) => "class",
+            (TypeKind.Struct, true) => "record struct",
+            (TypeKind.Struct, false) => "struct",
+            (TypeKind.Interface, _) => "interface",
+            (TypeKind.Enum, _) => "enum",
             _ => "class",
         };
 
         // For simplicity, always generate a partial type. This is the
         // standard pattern for source generators and requires the user
         // to declare the original type as partial as well.
-        const string modifiers = "partial";
+        var isReadOnly = (typeSymbol as INamedTypeSymbol)?.IsReadOnly == true;
+        var modifiers = isReadOnly ? "readonly partial" : "partial";
 
         var name = typeSymbol.Name;
         if (typeSymbol is INamedTypeSymbol named && named.TypeArguments.Length > 0)
@@ -123,7 +127,7 @@ internal static class Utility
 
         var indent = new string(' ', spaces);
         var lines = text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
-        return string.Join(Environment.NewLine, lines.Select(l => indent + l));
+        return string.Join("\n", lines.Select(l => indent + l));
     }
 
     public static List<ISymbol> GetAttributedSymbols(

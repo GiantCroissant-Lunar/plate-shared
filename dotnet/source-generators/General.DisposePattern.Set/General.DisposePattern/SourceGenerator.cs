@@ -1,4 +1,4 @@
-﻿// Copyright (c) GiantCroissant. All rights reserved.
+// Copyright (c) GiantCroissant. All rights reserved.
 
 using System;
 using System.Collections.Generic;
@@ -191,7 +191,7 @@ $$"""
         // TODO: Extract to examine more types
 #pragma warning restore S1135 // Track uses of "TODO" tags
         var cleanupStrings = symbols
-            .Select(symbol => (IFieldSymbol) symbol)
+            .Select(symbol => (IFieldSymbol)symbol)
             .Select(fieldSymbol =>
             {
                 var fieldName = fieldSymbol.Name;

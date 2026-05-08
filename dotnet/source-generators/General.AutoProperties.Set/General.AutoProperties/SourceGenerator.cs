@@ -19,6 +19,10 @@ public class SourceGenerator : IIncrementalGenerator
     private const string SkipProperty = "SkipProperty";
     private const string SkipPropertyAttribute = "SkipPropertyAttribute";
 
+    private static readonly SymbolDisplayFormat FullyQualifiedWithNullable = SymbolDisplayFormat.FullyQualifiedFormat
+        .WithMiscellaneousOptions(SymbolDisplayFormat.FullyQualifiedFormat.MiscellaneousOptions |
+                                 SymbolDisplayMiscellaneousOptions.IncludeNullableReferenceTypeModifier);
+
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
         var typeSymbols = context.SyntaxProvider
@@ -273,18 +277,24 @@ public class SourceGenerator : IIncrementalGenerator
         var accessibilityModifier = GetAccessibilityModifier(fieldInfo.Accessibility);
         var fieldName = fieldInfo.Field.Name;
         var propertyName = fieldInfo.PropertyName;
-        var fieldType = fieldInfo.Field.Type.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat);
+
+        // Preserve nullable annotations (e.g., string? / IReadOnlyList<T>?) so the generated
+        // property signature matches the backing field and avoids nullable analysis warnings.
+        var fieldTypeSymbol = fieldInfo.Field.Type.WithNullableAnnotation(fieldInfo.Field.NullableAnnotation);
+        var fieldType = fieldTypeSymbol.ToDisplayString(FullyQualifiedWithNullable);
         var requiredModifier = fieldInfo.IsRequired ? "required " : string.Empty;
         var propertyType = requiredModifier + fieldType;
 
+        var getterExpression = GetGetterExpression(fieldInfo.Field, fieldName);
+
         var propertyCode = fieldInfo.PropertyKind switch
         {
-            PropertyKind.GetterOnly => GenerateGetterOnlyProperty(accessibilityModifier, propertyType, propertyName, fieldName),
-            PropertyKind.GetterPrivateSetter => GenerateGetterPrivateSetterProperty(accessibilityModifier, propertyType, propertyName, fieldName),
-            PropertyKind.GetterProtectedSetter => GenerateGetterProtectedSetterProperty(accessibilityModifier, propertyType, propertyName, fieldName),
-            PropertyKind.GetterInternalSetter => GenerateGetterInternalSetterProperty(accessibilityModifier, propertyType, propertyName, fieldName),
-            PropertyKind.GetterInitOnly => GenerateGetterInitOnlyProperty(accessibilityModifier, propertyType, propertyName, fieldName),
-            _ => GenerateGetterSetterProperty(accessibilityModifier, propertyType, propertyName, fieldName)
+            PropertyKind.GetterOnly => GenerateGetterOnlyProperty(accessibilityModifier, propertyType, propertyName, getterExpression),
+            PropertyKind.GetterPrivateSetter => GenerateGetterPrivateSetterProperty(accessibilityModifier, propertyType, propertyName, getterExpression, fieldName),
+            PropertyKind.GetterProtectedSetter => GenerateGetterProtectedSetterProperty(accessibilityModifier, propertyType, propertyName, getterExpression, fieldName),
+            PropertyKind.GetterInternalSetter => GenerateGetterInternalSetterProperty(accessibilityModifier, propertyType, propertyName, getterExpression, fieldName),
+            PropertyKind.GetterInitOnly => GenerateGetterInitOnlyProperty(accessibilityModifier, propertyType, propertyName, getterExpression, fieldName),
+            _ => GenerateGetterSetterProperty(accessibilityModifier, propertyType, propertyName, getterExpression, fieldName)
         };
 
         return Utility.Indent(propertyCode, 4);
@@ -302,57 +312,73 @@ public class SourceGenerator : IIncrementalGenerator
         };
     }
 
-    private static string GenerateGetterSetterProperty(string accessibility, string type, string propertyName, string fieldName)
+    private static string GenerateGetterSetterProperty(string accessibility, string type, string propertyName, string getterExpression, string fieldName)
     {
         return $@"{accessibility} {type} {propertyName}
 {{
-    get => {fieldName};
+    get => {getterExpression};
     set => {fieldName} = value;
 }}";
     }
 
-    private static string GenerateGetterOnlyProperty(string accessibility, string type, string propertyName, string fieldName)
+    private static string GenerateGetterOnlyProperty(string accessibility, string type, string propertyName, string getterExpression)
     {
         return $@"{accessibility} {type} {propertyName}
 {{
-    get => {fieldName};
+    get => {getterExpression};
 }}";
     }
 
-    private static string GenerateGetterPrivateSetterProperty(string accessibility, string type, string propertyName, string fieldName)
+    private static string GenerateGetterPrivateSetterProperty(string accessibility, string type, string propertyName, string getterExpression, string fieldName)
     {
         return $@"{accessibility} {type} {propertyName}
 {{
-    get => {fieldName};
+    get => {getterExpression};
     private set => {fieldName} = value;
 }}";
     }
 
-    private static string GenerateGetterProtectedSetterProperty(string accessibility, string type, string propertyName, string fieldName)
+    private static string GenerateGetterProtectedSetterProperty(string accessibility, string type, string propertyName, string getterExpression, string fieldName)
     {
         return $@"{accessibility} {type} {propertyName}
 {{
-    get => {fieldName};
+    get => {getterExpression};
     protected set => {fieldName} = value;
 }}";
     }
 
-    private static string GenerateGetterInternalSetterProperty(string accessibility, string type, string propertyName, string fieldName)
+    private static string GenerateGetterInternalSetterProperty(string accessibility, string type, string propertyName, string getterExpression, string fieldName)
     {
         return $@"{accessibility} {type} {propertyName}
 {{
-    get => {fieldName};
+    get => {getterExpression};
     internal set => {fieldName} = value;
 }}";
     }
 
-    private static string GenerateGetterInitOnlyProperty(string accessibility, string type, string propertyName, string fieldName)
+    private static string GenerateGetterInitOnlyProperty(string accessibility, string type, string propertyName, string getterExpression, string fieldName)
     {
         return $@"{accessibility} {type} {propertyName}
 {{
-    get => {fieldName};
+    get => {getterExpression};
     init => {fieldName} = value;
 }}";
+    }
+
+    private static string GetGetterExpression(IFieldSymbol field, string fieldName)
+    {
+        // If a field is a non-nullable reference type but not definitely assigned,
+        // returning it from a generated getter triggers CS8603 under #nullable enable.
+        // Using the null-forgiving operator keeps the generated API surface intact
+        // while avoiding pervasive warnings in consuming (non-test) projects.
+        var fieldType = field.Type;
+
+        if (fieldType.IsReferenceType && field.NullableAnnotation != NullableAnnotation.Annotated)
+        {
+            return fieldName + "!";
+        }
+
+        return fieldName;
     }
 
     private class AutoPropertyConfiguration
