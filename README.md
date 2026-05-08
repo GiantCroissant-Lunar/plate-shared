@@ -7,6 +7,8 @@
 
 A collection of C# source generators and shared libraries for the Plate project ecosystem.
 
+> **Note**: Resilience packages have been consolidated into [crosscut-foundation](https://github.com). The source generator, attributes, abstractions, and Polly implementation now live there as `GiantCroissant.Plate.*` packages.
+
 ## Features
 
 ### Source Generators
@@ -16,12 +18,7 @@ A collection of C# source generators and shared libraries for the Plate project 
 - **General.AutoToString** - Automatic `ToString()` method generation
 - **General.DisposePattern** - Implement IDisposable pattern correctly
 - **General.NamespaceUsingScope** - Namespace and using directive management
-- **Resilience.Decorator** - Generate resilience decorator patterns
-
-### Libraries
-
-- **Plate.Resilience.Abstractions** - Core abstractions for resilience patterns
-- **Plate.Resilience.Polly** - Integration with Polly for resilience strategies
+Note: Resilience packages (Resilience.Decorator, Plate.Resilience.Abstractions, Plate.Resilience.Polly) have moved to `crosscut-foundation`.
 
 ## Getting Started
 
@@ -104,5 +101,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Built with:
 - [Roslyn](https://github.com/dotnet/roslyn) - .NET Compiler Platform
-- [Polly](https://github.com/App-vNext/Polly) - Resilience and transient-fault-handling library
 - [NUKE](https://nuke.build/) - Cross-platform build automation system
