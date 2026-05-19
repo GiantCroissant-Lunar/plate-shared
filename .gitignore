@@ -24,3 +24,21 @@ packages/
 dotnet/source-generators/Resilience.Decorator.Set/
 dotnet/src/Plate.Resilience.Abstractions/
 dotnet/src/Plate.Resilience.Polly/
+
+# Generated agent adapter outputs (regenerate via tools/sync-agent-resources.py)
+.agents/
+.claude/
+.cline/
+.clinerules/
+.codex/
+.cursor/
+.gemini/
+.kilo/
+.kilocode/
+.kiro/
+.opencode/
+.qwen/
+.windsurf/
+CLAUDE.md
+GEMINI.md
+AGENTS.md
