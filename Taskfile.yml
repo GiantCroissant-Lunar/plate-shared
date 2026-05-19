@@ -3,6 +3,7 @@ version: '3'
 vars:
   BUILD_DIR: build
   ARTIFACTS_DIR: '{{.BUILD_DIR}}/_artifacts'
+  GITVERSION_JSON: bash tools/gitversion.sh
 
 tasks:
   default:
@@ -21,10 +22,13 @@ tasks:
       - dotnet unify-build compile
 
   pack:
-    desc: Create NuGet packages
+    desc: Create NuGet packages (version from GitVersion)
     deps: [restore]
     cmds:
       - dotnet unify-build pack
+    env:
+      GITVERSION_MAJORMINORPATCH:
+        sh: '{{.GITVERSION_JSON}} | python -c "import sys,json;print(json.load(sys.stdin)[''MajorMinorPatch''])"'
 
   test:
     desc: Run all tests
@@ -32,7 +36,18 @@ tasks:
     cmds:
       - dotnet unify-build test
 
+  version:
+    desc: Show computed version
+    deps: [restore]
+    cmds:
+      - '{{.GITVERSION_JSON}} | python -c "import sys,json;d=json.load(sys.stdin);print(d[''FullSemVer''])"'
+
   clean:
     desc: Clean build artifacts
     cmds:
       - dotnet unify-build clean
+
+  changelog:
+    desc: Generate changelog from conventional commits
+    cmds:
+      - git-cliff -o CHANGELOG.md
