@@ -39,7 +39,7 @@ Quick add via MSBuild props (recommended):
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />
     <!-- Attributes package -->
-    <PackageReference Include="Plate.SCG.Shared.Attributes" Version="0.1.0" />
+    <PackageReference Include="PlateShared.SCG.Shared.Attributes" Version="0.1.0" />
   </ItemGroup>
   ```
 
@@ -48,7 +48,7 @@ Quick add via MSBuild props (recommended):
 1. **Mark your class with the `[DisposePattern]` attribute**:
 
    ```csharp
-   using Plate.SCG.General.DisposePattern.Attributes;
+   using PlateShared.SCG.General.DisposePattern.Attributes;
 
    [DisposePattern]
    public partial class MyClass
@@ -135,9 +135,9 @@ For guidance on when and where to use the DisposePattern generator across the co
 
 The DisposePattern generator packages are sourced from the [eco-shared repository](https://github.com/GiantCroissant-Lunar/eco-shared) and stored locally in `../.local-packages/`:
 
-- `Plate.SCG.General.DisposePattern.0.1.0.nupkg` - The source generator
-- `Plate.SCG.Shared.Attributes.0.1.0.nupkg` - Required attributes
-- `Plate.SCG.Shared.Abstractions.0.1.0.nupkg` - Transitive dependency
+- `PlateShared.SCG.General.DisposePattern.0.1.0.nupkg` - The source generator
+- `PlateShared.SCG.Shared.Attributes.0.1.0.nupkg` - Required attributes
+- `PlateShared.SCG.Shared.Abstractions.0.1.0.nupkg` - Transitive dependency
 - `Plate.Shared.Abstractions.0.1.0.nupkg` - Transitive dependency
 
 **Note**: Only the first two packages are directly referenced in project files. The remaining packages are transitive dependencies required by the generator but don't need explicit project references.
@@ -199,7 +199,7 @@ The AutoProperties source generator automatically creates public properties from
     <ProjectReference Include="General.AutoProperties.Set\General.AutoProperties\General.AutoProperties.csproj"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />
-    <PackageReference Include="Plate.General.AutoProperties.Attributes" Version="0.1.0" />
+    <PackageReference Include="PlateShared.General.AutoProperties.Attributes" Version="0.1.0" />
   </ItemGroup>
 </Project>
 ```
@@ -215,7 +215,7 @@ The AutoProperties source generator automatically creates public properties from
 2. Add the attributes namespace and mark a partial type:
 
    ```csharp
-   using Plate.General.AutoProperties.Attributes;
+   using PlateShared.General.AutoProperties.Attributes;
 
    [AutoProperty]
    public partial class Example
@@ -242,7 +242,7 @@ The generator emits `*.AutoProperties.g.cs` files under `obj/` – do not edit t
 
 ## NamespaceUsingScope Analyzer (Prototype)
 
-`Plate.SCG.General.NamespaceUsingScope` enforces where `using` directives should live relative to namespaces, based on a simple JSON config. It is currently consumed directly via `ProjectReference` from consumer repos.
+`PlateShared.SCG.General.NamespaceUsingScope` enforces where `using` directives should live relative to namespaces, based on a simple JSON config. It is currently consumed directly via `ProjectReference` from consumer repos.
 
 ### Configuration
 
@@ -291,10 +291,10 @@ When integrating another shared source generator into this repo:
    Example: `General.AutoProperties.Set`, `DI.ConstructorInjection.Set`.
 2. **Add the generator project and source**:
    - `*.csproj` targeting `netstandard2.0`, marked as analyzer (`IsRoslynAnalyzer`, `IsRoslynComponent`).
-   - `SourceGenerator.cs` that uses `Plate.SCG.Shared.Abstractions.Utility` helpers.
+   - `SourceGenerator.cs` that uses `PlateShared.SCG.Shared.Abstractions.Utility` helpers.
 3. **Create a `*.Local.props` file** in `dotnet/source-generators` that:
    - Adds a `ProjectReference` to the in-repo generator project with `OutputItemType="Analyzer"` and `ReferenceOutputAssembly="false"`.
-   - Adds any required **attributes packages** (e.g., `Plate.SCG.Shared.Attributes`, `Plate.General.AutoProperties.Attributes`).
+   - Adds any required **attributes packages** (e.g., `PlateShared.SCG.Shared.Attributes`, `PlateShared.General.AutoProperties.Attributes`).
 4. **Import the local props** from each consuming project via `<Import Project="..\..\..\..\source-generators\Xxx.Local.props" />`, adjusting the relative path.
 5. **Use the documented attributes** in code (e.g., `[DisposePattern]`, `[AutoProperty]`, `[GenerateProperty]`).
 6. **Build and verify** that the analyzer DLL is referenced and the expected `*.g.cs` files are generated without errors.

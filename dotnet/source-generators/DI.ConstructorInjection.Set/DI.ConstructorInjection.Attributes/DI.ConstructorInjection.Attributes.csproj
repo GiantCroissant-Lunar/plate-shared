@@ -4,12 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
-    <AssemblyName>Plate.SCG.DI.ConstructorInjection.Attributes</AssemblyName>
-    <RootNamespace>Plate.SCG.DI.ConstructorInjection.Attributes</RootNamespace>
-    <PackageId>GiantCroissant.Plate.SCG.DI.ConstructorInjection.Attributes</PackageId>
+    <AssemblyName>PlateShared.SCG.DI.ConstructorInjection.Attributes</AssemblyName>
+    <RootNamespace>PlateShared.SCG.DI.ConstructorInjection.Attributes</RootNamespace>
+    <PackageId>GiantCroissant.PlateShared.SCG.DI.ConstructorInjection.Attributes</PackageId>
     <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
     <Authors>Lunar Horse</Authors>
-    <Description>Attributes for Plate.SCG.DI.ConstructorInjection source generator.</Description>
+    <Description>Attributes for PlateShared.SCG.DI.ConstructorInjection source generator.</Description>
     <PackageTags>source-generator;roslyn;di;dependency-injection;attributes</PackageTags>
     <DevelopmentDependency>false</DevelopmentDependency>
     <IncludeBuildOutput>true</IncludeBuildOutput>

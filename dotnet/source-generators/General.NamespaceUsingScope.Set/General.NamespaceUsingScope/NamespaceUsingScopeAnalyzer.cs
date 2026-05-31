@@ -7,7 +7,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Plate.SCG.General.NamespaceUsingScope;
+namespace PlateShared.SCG.General.NamespaceUsingScope;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class NamespaceUsingScopeAnalyzer : DiagnosticAnalyzer

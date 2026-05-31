@@ -9,7 +9,7 @@ using System.Threading;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Plate.SCG.DI.ConstructorInjection;
+namespace PlateShared.SCG.DI.ConstructorInjection;
 
 [Generator(LanguageNames.CSharp)]
 public sealed class SourceGenerator : IIncrementalGenerator

@@ -6,9 +6,9 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <langVersion>13</langVersion>
         <Nullable>enable</Nullable>
-        <AssemblyName>Plate.SCG.General.DisposePattern</AssemblyName>
-        <RootNamespace>Plate.SCG.General.DisposePattern</RootNamespace>
-        <PackageId>GiantCroissant.Plate.SCG.General.DisposePattern</PackageId>
+        <AssemblyName>PlateShared.SCG.General.DisposePattern</AssemblyName>
+        <RootNamespace>PlateShared.SCG.General.DisposePattern</RootNamespace>
+        <PackageId>GiantCroissant.PlateShared.SCG.General.DisposePattern</PackageId>
         <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
         <Authors>Lunar Horse</Authors>
         <Description>Source generator implementing the Dispose pattern for Plate projects.</Description>

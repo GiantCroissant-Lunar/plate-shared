@@ -1,6 +1,6 @@
 // Copyright (c) GiantCroissant. All rights reserved.
 
-namespace Plate.SCG.DI.ConstructorInjection.Tests;
+namespace PlateShared.SCG.DI.ConstructorInjection.Tests;
 
 public class UnitTest : VerifyBase
 {
@@ -19,7 +19,7 @@ public class UnitTest : VerifyBase
 """
 using System;
 using System.Collections.Generic;
-using Plate.SCG.DI.ConstructorInjection.Attributes;
+using PlateShared.SCG.DI.ConstructorInjection.Attributes;
 
 [ConstructorInjection]
 public partial class SomeType01
@@ -47,7 +47,7 @@ public partial class SomeType01
         const string code =
 """
 using System;
-using Plate.SCG.DI.ConstructorInjection.Attributes;
+using PlateShared.SCG.DI.ConstructorInjection.Attributes;
 
 // Minimal AutoProperties-like attribute for testing
 [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = false)]

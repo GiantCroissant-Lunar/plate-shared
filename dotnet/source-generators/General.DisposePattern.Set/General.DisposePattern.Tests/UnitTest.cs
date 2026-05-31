@@ -1,6 +1,6 @@
 // Copyright (c) GiantCroissant. All rights reserved.
 
-namespace Plate.SCG.General.DisposePattern.Tests;
+namespace PlateShared.SCG.General.DisposePattern.Tests;
 
 public class UnitTest : VerifyBase
 {
@@ -20,9 +20,9 @@ public class UnitTest : VerifyBase
 using System;
 using System.Collections.Generic;
 
-namespace Plate.Game.Fake;
+namespace PlateShared.Game.Fake;
 
-using Plate.SCG.General.DisposePattern.Attributes;
+using PlateShared.SCG.General.DisposePattern.Attributes;
 
 public class Person : IDisposable
 {

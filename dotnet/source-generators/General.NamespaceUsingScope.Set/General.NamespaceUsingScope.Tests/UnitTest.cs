@@ -1,9 +1,9 @@
 using System.Linq;
 using System.Threading.Tasks;
-using Plate.SCG.General.NamespaceUsingScope;
+using PlateShared.SCG.General.NamespaceUsingScope;
 using Xunit;
 
-namespace Plate.General.NamespaceUsingScope.Tests;
+namespace PlateShared.General.NamespaceUsingScope.Tests;
 
 public class UnitTest
 {

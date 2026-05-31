@@ -1,6 +1,6 @@
 // Copyright (c) GiantCroissant. All rights reserved.
 
-namespace Plate.SCG.General.AutoToString.Tests;
+namespace PlateShared.SCG.General.AutoToString.Tests;
 
 public class UnitTest : VerifyBase
 {
@@ -20,9 +20,9 @@ public class UnitTest : VerifyBase
 using System;
 using System.Collections.Generic;
 
-namespace Plate.Game.Fake;
+namespace PlateShared.Game.Fake;
 
-using Plate.SCG.General.AutoToString.Attributes;
+using PlateShared.SCG.General.AutoToString.Attributes;
 
 [AutoToString]
 public partial class SomeType01
@@ -68,9 +68,9 @@ public partial class SomeType02
 """
 using System;
 
-namespace Plate.Game.Fake;
+namespace PlateShared.Game.Fake;
 
-using Plate.SCG.General.AutoToString.Attributes;
+using PlateShared.SCG.General.AutoToString.Attributes;
 
 // Minimal AutoProperties-like attributes for testing
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false, Inherited = false)]

@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
 
-namespace Plate.SCG.General.DisposePattern.Tests;
+namespace PlateShared.SCG.General.DisposePattern.Tests;
 
 using DisposePattern;
 
@@ -25,7 +25,7 @@ public static class TestHelper
 
         // Create a Roslyn compilation for the syntax tree.
         var compilation = CSharpCompilation.Create(
-            assemblyName: "Plate.SCG.General.DisposePattern.Tests",
+            assemblyName: "PlateShared.SCG.General.DisposePattern.Tests",
             syntaxTrees: new[] {syntaxTree},
             references: references,
             options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));

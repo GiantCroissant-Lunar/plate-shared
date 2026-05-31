@@ -7,7 +7,7 @@ using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
 
-namespace Plate.SCG.General.AutoProperties;
+namespace PlateShared.SCG.General.AutoProperties;
 
 [Generator(LanguageNames.CSharp)]
 public class SourceGenerator : IIncrementalGenerator

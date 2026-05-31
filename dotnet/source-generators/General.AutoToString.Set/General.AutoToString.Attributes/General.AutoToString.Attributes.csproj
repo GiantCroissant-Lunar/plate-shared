@@ -4,12 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
-    <AssemblyName>Plate.SCG.General.AutoToString.Attributes</AssemblyName>
-    <RootNamespace>Plate.SCG.General.AutoToString.Attributes</RootNamespace>
-    <PackageId>GiantCroissant.Plate.SCG.General.AutoToString.Attributes</PackageId>
+    <AssemblyName>PlateShared.SCG.General.AutoToString.Attributes</AssemblyName>
+    <RootNamespace>PlateShared.SCG.General.AutoToString.Attributes</RootNamespace>
+    <PackageId>GiantCroissant.PlateShared.SCG.General.AutoToString.Attributes</PackageId>
     <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
     <Authors>Lunar Horse</Authors>
-    <Description>Attributes for Plate.SCG.General.AutoToString source generator.</Description>
+    <Description>Attributes for PlateShared.SCG.General.AutoToString source generator.</Description>
     <PackageTags>source-generator;roslyn;auto-tostring;attributes</PackageTags>
     <DevelopmentDependency>false</DevelopmentDependency>
     <IncludeBuildOutput>true</IncludeBuildOutput>

@@ -5,11 +5,11 @@ using System.Threading;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Plate.SCG.DI.ConstructorInjection;
+namespace PlateShared.SCG.DI.ConstructorInjection;
 
 /// <summary>
 /// Minimal utility helpers inlined here so this generator does not depend
-/// on Plate.SCG.Shared.Abstractions. Only members actually used by
+/// on PlateShared.SCG.Shared.Abstractions. Only members actually used by
 /// <see cref="SourceGenerator"/> are implemented.
 /// </summary>
 internal static class Utility

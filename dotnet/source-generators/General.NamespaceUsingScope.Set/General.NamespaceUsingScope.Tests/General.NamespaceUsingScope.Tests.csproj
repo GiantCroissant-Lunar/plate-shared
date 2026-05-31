@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <AssemblyName>Plate.General.NamespaceUsingScope.Tests</AssemblyName>
+    <AssemblyName>PlateShared.General.NamespaceUsingScope.Tests</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

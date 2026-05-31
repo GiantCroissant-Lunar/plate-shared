@@ -11,7 +11,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Formatting;
 
-namespace Plate.SCG.General.NamespaceUsingScope;
+namespace PlateShared.SCG.General.NamespaceUsingScope;
 
 [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(NamespaceUsingScopeCodeFixProvider))]
 [Shared]

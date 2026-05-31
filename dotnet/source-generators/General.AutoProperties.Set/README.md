@@ -147,8 +147,8 @@ public string Id
 When combined with `General.AutoToString`:
 
 ```csharp
-using Plate.SCG.General.AutoToString.Attributes;
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.SCG.General.AutoToString.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 [AutoProperty(FieldPrefix = "_")]
 [AutoToString]
@@ -177,8 +177,8 @@ Person Name = { _name }
 When combined with `DI.ConstructorInjection`:
 
 ```csharp
-using Plate.SCG.DI.ConstructorInjection.Attributes;
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.SCG.DI.ConstructorInjection.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 [ConstructorInjection]
 [AutoProperty]

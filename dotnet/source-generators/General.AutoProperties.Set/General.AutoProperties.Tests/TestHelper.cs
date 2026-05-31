@@ -8,10 +8,10 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
 using VerifyTests;
 using VerifyXunit;
-using Plate.SCG.General.AutoProperties;
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.SCG.General.AutoProperties;
+using PlateShared.General.AutoProperties.Attributes;
 
-namespace Plate.General.AutoProperties.Tests;
+namespace PlateShared.General.AutoProperties.Tests;
 
 public static class TestHelper
 {
@@ -29,7 +29,7 @@ public static class TestHelper
             });
 
         var compilation = CSharpCompilation.Create(
-            assemblyName: "Plate.General.AutoProperties.Tests",
+            assemblyName: "PlateShared.General.AutoProperties.Tests",
             syntaxTrees: new[] { syntaxTree },
             references: references,
             options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));

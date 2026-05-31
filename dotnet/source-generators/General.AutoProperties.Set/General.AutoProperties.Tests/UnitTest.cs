@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using Plate.SCG.General.AutoProperties;
+using PlateShared.SCG.General.AutoProperties;
 using Xunit;
 
-namespace Plate.General.AutoProperties.Tests;
+namespace PlateShared.General.AutoProperties.Tests;
 
 public class UnitTest
 {
@@ -12,7 +12,7 @@ public class UnitTest
     public Task CheckBasicPropertyGeneration()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 
@@ -34,7 +34,7 @@ public partial class TestClass
     public Task CheckCustomPropertyNames()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 
@@ -56,7 +56,7 @@ public partial class TestClass
     public Task CheckDifferentPropertyKinds()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 
@@ -84,7 +84,7 @@ public partial class TestClass
     public Task CheckDifferentAccessibilityLevels()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 
@@ -109,7 +109,7 @@ public partial class TestClass
     public Task CheckGenerateForAllFields()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 
@@ -131,7 +131,7 @@ public partial class TestClass
     public Task CheckCustomFieldPrefix()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 
@@ -153,7 +153,7 @@ public partial class TestClass
     public Task CheckDefaultInitOnlyPropertyKind()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 
@@ -172,7 +172,7 @@ public partial class TestClass
     public Task CheckRequiredInitOnlyProperty()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 
@@ -191,8 +191,8 @@ public partial class TestClass
     public Task CheckAutoPropertyWithAutoToStringIntegration()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
-using Plate.SCG.General.AutoToString.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
+using PlateShared.SCG.General.AutoToString.Attributes;
 
 namespace TestNamespace;
 
@@ -212,7 +212,7 @@ public partial class TestClass
     public Task CheckReadonlyFieldGeneratesGetterOnly()
     {
         var source = """
-using Plate.General.AutoProperties.Attributes;
+using PlateShared.General.AutoProperties.Attributes;
 
 namespace TestNamespace;
 

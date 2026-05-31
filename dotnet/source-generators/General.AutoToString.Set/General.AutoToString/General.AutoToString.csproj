@@ -4,9 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
-    <AssemblyName>Plate.SCG.General.AutoToString</AssemblyName>
-    <RootNamespace>Plate.SCG.General.AutoToString</RootNamespace>
-    <PackageId>GiantCroissant.Plate.SCG.General.AutoToString</PackageId>
+    <AssemblyName>PlateShared.SCG.General.AutoToString</AssemblyName>
+    <RootNamespace>PlateShared.SCG.General.AutoToString</RootNamespace>
+    <PackageId>GiantCroissant.PlateShared.SCG.General.AutoToString</PackageId>
     <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
     <Authors>Lunar Horse</Authors>
     <Description>Source generator for automatic ToString implementation</Description>

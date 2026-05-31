@@ -6,11 +6,11 @@ using System.Threading;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Plate.SCG.General.AutoToString;
+namespace PlateShared.SCG.General.AutoToString;
 
 /// <summary>
 /// Minimal utility helpers inlined here so this generator does not depend
-/// on Plate.SCG.Shared.Abstractions. Only members actually used by
+/// on PlateShared.SCG.Shared.Abstractions. Only members actually used by
 /// <see cref="SourceGenerator"/> are implemented.
 /// </summary>
 internal static class Utility

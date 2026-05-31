@@ -4,9 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
-    <AssemblyName>Plate.SCG.General.NamespaceUsingScope</AssemblyName>
-    <RootNamespace>Plate.SCG.General.NamespaceUsingScope</RootNamespace>
-    <PackageId>GiantCroissant.Plate.SCG.General.NamespaceUsingScope</PackageId>
+    <AssemblyName>PlateShared.SCG.General.NamespaceUsingScope</AssemblyName>
+    <RootNamespace>PlateShared.SCG.General.NamespaceUsingScope</RootNamespace>
+    <PackageId>GiantCroissant.PlateShared.SCG.General.NamespaceUsingScope</PackageId>
     <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
     <Authors>Lunar Horse</Authors>
     <Description>Source generator for namespace using scope management</Description>

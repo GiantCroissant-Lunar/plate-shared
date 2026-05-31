@@ -4,10 +4,10 @@ using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
-using Plate.SCG.DI.ConstructorInjection;
-using Plate.SCG.DI.ConstructorInjection.Attributes;
+using PlateShared.SCG.DI.ConstructorInjection;
+using PlateShared.SCG.DI.ConstructorInjection.Attributes;
 
-namespace Plate.SCG.DI.ConstructorInjection.Tests;
+namespace PlateShared.SCG.DI.ConstructorInjection.Tests;
 
 public static class TestHelper
 {
@@ -29,7 +29,7 @@ public static class TestHelper
 
         // Create a Roslyn compilation for the syntax tree.
         var compilation = CSharpCompilation.Create(
-            assemblyName: "Plate.SCG.DI.ConstructorInjection.Tests",
+            assemblyName: "PlateShared.SCG.DI.ConstructorInjection.Tests",
             syntaxTrees: new[] {syntaxTree},
             references: references,
             options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));

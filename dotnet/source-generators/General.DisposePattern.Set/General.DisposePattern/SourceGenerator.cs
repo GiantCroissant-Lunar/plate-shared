@@ -9,7 +9,7 @@ using System.Threading;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Plate.SCG.General.DisposePattern;
+namespace PlateShared.SCG.General.DisposePattern;
 
 [Generator(LanguageNames.CSharp)]
 public sealed class SourceGenerator : IIncrementalGenerator

@@ -5,7 +5,7 @@ using System.Threading;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Plate.SCG.General.AutoProperties;
+namespace PlateShared.SCG.General.AutoProperties;
 
 internal static class Utility
 {

@@ -2,7 +2,7 @@
 
 using System.Runtime.CompilerServices;
 
-namespace Plate.SCG.General.DisposePattern.Tests;
+namespace PlateShared.SCG.General.DisposePattern.Tests;
 
 public static class ModuleInitializer
 {

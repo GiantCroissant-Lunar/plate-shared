@@ -4,10 +4,10 @@ using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
-using Plate.SCG.General.AutoToString;
-using Plate.SCG.General.AutoToString.Attributes;
+using PlateShared.SCG.General.AutoToString;
+using PlateShared.SCG.General.AutoToString.Attributes;
 
-namespace Plate.SCG.General.AutoToString.Tests;
+namespace PlateShared.SCG.General.AutoToString.Tests;
 
 public static class TestHelper
 {
@@ -29,7 +29,7 @@ public static class TestHelper
 
         // Create a Roslyn compilation for the syntax tree.
         var compilation = CSharpCompilation.Create(
-            assemblyName: "Plate.SCG.General.AutoToString.Tests",
+            assemblyName: "PlateShared.SCG.General.AutoToString.Tests",
             syntaxTrees: new[] { syntaxTree },
             references: references,
             options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));

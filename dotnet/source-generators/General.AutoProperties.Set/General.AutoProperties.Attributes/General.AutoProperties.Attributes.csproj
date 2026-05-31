@@ -4,12 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
-    <AssemblyName>Plate.General.AutoProperties.Attributes</AssemblyName>
-    <RootNamespace>Plate.General.AutoProperties.Attributes</RootNamespace>
-    <PackageId>GiantCroissant.Plate.General.AutoProperties.Attributes</PackageId>
+    <AssemblyName>PlateShared.General.AutoProperties.Attributes</AssemblyName>
+    <RootNamespace>PlateShared.General.AutoProperties.Attributes</RootNamespace>
+    <PackageId>GiantCroissant.PlateShared.General.AutoProperties.Attributes</PackageId>
     <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
     <Authors>Lunar Horse</Authors>
-    <Description>Attributes for Plate.SCG.General.AutoProperties source generator.</Description>
+    <Description>Attributes for PlateShared.SCG.General.AutoProperties source generator.</Description>
     <PackageTags>source-generator;roslyn;auto-properties;attributes</PackageTags>
     <DevelopmentDependency>false</DevelopmentDependency>
     <IncludeBuildOutput>true</IncludeBuildOutput>

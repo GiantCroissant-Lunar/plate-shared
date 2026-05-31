@@ -1,7 +1,7 @@
 <Project>
   <ItemGroup>
-    <PackageReference Include="Plate.SCG.Shared.Attributes" Version="0.1.0" />
-    <PackageReference Include="Plate.SCG.General.DisposePattern" Version="0.1.0"
+    <PackageReference Include="PlateShared.SCG.Shared.Attributes" Version="0.1.0" />
+    <PackageReference Include="PlateShared.SCG.General.DisposePattern" Version="0.1.0"
                       PrivateAssets="all"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />

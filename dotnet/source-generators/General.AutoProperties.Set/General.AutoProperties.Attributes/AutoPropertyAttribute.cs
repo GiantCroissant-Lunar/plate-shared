@@ -1,6 +1,6 @@
 using System;
 
-namespace Plate.General.AutoProperties.Attributes;
+namespace PlateShared.General.AutoProperties.Attributes;
 
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false, Inherited = false)]
 public sealed class AutoPropertyAttribute : Attribute

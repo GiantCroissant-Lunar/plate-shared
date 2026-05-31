@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using Microsoft.CodeAnalysis;
 
-namespace Plate.SCG.General.AutoToString;
+namespace PlateShared.SCG.General.AutoToString;
 
 [Generator(LanguageNames.CSharp)]
 public class SourceGenerator : IIncrementalGenerator

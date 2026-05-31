@@ -4,9 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
-    <AssemblyName>Plate.SCG.DI.ConstructorInjection</AssemblyName>
-    <RootNamespace>Plate.SCG.DI.ConstructorInjection</RootNamespace>
-    <PackageId>GiantCroissant.Plate.SCG.DI.ConstructorInjection</PackageId>
+    <AssemblyName>PlateShared.SCG.DI.ConstructorInjection</AssemblyName>
+    <RootNamespace>PlateShared.SCG.DI.ConstructorInjection</RootNamespace>
+    <PackageId>GiantCroissant.PlateShared.SCG.DI.ConstructorInjection</PackageId>
     <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
     <Authors>Lunar Horse</Authors>
     <Description>Source generator for dependency injection constructor injection</Description>
@@ -22,7 +22,7 @@
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="4.3.0" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0" PrivateAssets="all" />
-    <!-- Plate.SCG.Shared.Abstractions is not yet published; attributes come from DI.ConstructorInjection.Attributes project reference -->
+    <!-- PlateShared.SCG.Shared.Abstractions is not yet published; attributes come from DI.ConstructorInjection.Attributes project reference -->
   </ItemGroup>
 
   <PropertyGroup>

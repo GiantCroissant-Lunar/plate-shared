@@ -7,9 +7,9 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.CodeAnalysis.Text;
-using Plate.SCG.General.NamespaceUsingScope;
+using PlateShared.SCG.General.NamespaceUsingScope;
 
-namespace Plate.General.NamespaceUsingScope.Tests;
+namespace PlateShared.General.NamespaceUsingScope.Tests;
 
 public static class TestHelper
 {

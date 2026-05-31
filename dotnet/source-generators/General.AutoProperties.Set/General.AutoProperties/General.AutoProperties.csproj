@@ -4,9 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
-    <AssemblyName>Plate.SCG.General.AutoProperties</AssemblyName>
-    <RootNamespace>Plate.SCG.General.AutoProperties</RootNamespace>
-    <PackageId>GiantCroissant.Plate.SCG.General.AutoProperties</PackageId>
+    <AssemblyName>PlateShared.SCG.General.AutoProperties</AssemblyName>
+    <RootNamespace>PlateShared.SCG.General.AutoProperties</RootNamespace>
+    <PackageId>GiantCroissant.PlateShared.SCG.General.AutoProperties</PackageId>
     <Version>$(GITVERSION_MAJORMINORPATCH)</Version>
     <Authors>Lunar Horse</Authors>
     <Description>Source generator for automatic property implementation</Description>
