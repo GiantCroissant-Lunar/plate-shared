@@ -42,3 +42,6 @@ dotnet/src/Plate.Resilience.Polly/
 CLAUDE.md
 GEMINI.md
 AGENTS.md
+
+# CodeGraph local index
+.codegraph/
