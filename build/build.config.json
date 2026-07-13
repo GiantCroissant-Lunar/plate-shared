@@ -29,5 +29,5 @@
   },
 
   "syncLocalNugetFeed": true,
-  "localNugetFeedRoot": "C:\\lunar-horse\\packages\\nuget"
+  "localNugetFeedRoot": "../../packages/nuget"
 }
