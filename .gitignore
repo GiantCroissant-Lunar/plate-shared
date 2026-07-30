@@ -37,7 +37,6 @@ dotnet/src/Plate.Resilience.Polly/
 .kilocode/
 .kiro/
 .opencode/
-.qwen/
 .windsurf/
 CLAUDE.md
 GEMINI.md
